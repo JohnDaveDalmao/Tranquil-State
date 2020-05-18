@@ -1,0 +1,27 @@
+/* ===========
+  Break Points
+ =============*/
+
+@mixin small {
+  @media (min-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin extra-large {
+  @media (min-width:#{extra-large}) {
+    @content;
+  }
+}

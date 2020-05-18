@@ -1,0 +1,59 @@
+.toggled-nav {
+  display: none;
+  color: color(primary);
+  background-color: color(light-blue);
+  text-align: center;
+  width: 82%;
+  padding: 25px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .fa-times {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+  }
+
+  hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid color(hr-color);
+    padding: 0;
+    margin: 25px 0;
+    height: 1px;
+  }
+
+  .nav-menu {
+    line-height: 3;
+
+    a {
+      display: block;
+      border-radius: 10px;
+    }
+
+    a:hover {
+      background-color: color(mid-blue);
+    }
+  }
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  color: color(primary);
+  background-color: #394548; //rgba(54, 58, 77, 0.9)
+  padding: 15px;
+  position: sticky;
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+  .fa-bars {
+    cursor: pointer;
+  }
+}

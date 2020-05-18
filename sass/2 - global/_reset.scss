@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh; //temp ra if maguba
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: color(primary);
+}
+
+p {
+  line-height: 1.8;
+}
+// hr {
+//   border: 0;
+//   border-top: 1px solid red;
+//   padding: 0;
+//   width: 80%;
+// }
