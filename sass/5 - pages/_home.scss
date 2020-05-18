@@ -1,7 +1,40 @@
-.relax {
-  background-color: color(light-blue);
-  text-align: right;
+/*==============
+  Hero Section
+==============*/
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/banner.jpeg) center / cover no-repeat;
+  padding: $content-padding;
+  color: color(primary);
+  height: 60vh;
 
+  .fa-map-signs {
+    font-size: 3.2em;
+    border: 1px solid color(primary);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: $y-element-margin;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  hr {
+    margin: $y-element-margin;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+/*================
+  Feature Section
+=================*/
+.features {
   img {
     border-radius: 50%;
     height: $img-measurement;
@@ -21,4 +54,44 @@
       margin-left: 5px;
     }
   }
+}
+
+// First Feature
+.relax {
+  background-color: color(light-blue);
+  text-align: right;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 110px;
+}
+
+.relax::before {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  content: "";
+  background: inherit;
+  z-index: -1;
+  top: -40px;
+  left: 0;
+  transform: skewY(-8deg);
+}
+
+// Second Feature
+.photography {
+  background-color: color(mid-blue);
+  position: relative;
+  z-index: 1;
+}
+
+.photography::before {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  content: "";
+  background: inherit;
+  z-index: -1;
+  top: -40px;
+  left: 0;
+  transform: skewY(8deg);
 }
