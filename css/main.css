@@ -1,5 +1,5 @@
-/* ===========
-  Break Points
+/* =============
+  Media Queries
  =============*/
 @import url("https://fonts.googleapis.com/css2?family=Rambla:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
@@ -13,6 +13,11 @@
 body {
   position: relative;
   height: 100vh;
+  color: #fdfdfd;
+}
+
+section {
+  padding: 2em;
 }
 
 ul {
@@ -28,6 +33,10 @@ p {
   line-height: 1.8;
 }
 
+img {
+  width: 100%;
+}
+
 /* Fonts */
 * {
   font-family: "Muli", sans-serif;
@@ -36,70 +45,6 @@ p {
 h1,
 h2 {
   font-family: "Rambla", sans-serif;
-}
-
-.toggled-nav {
-  display: none;
-  color: #fdfdfd;
-  background-color: #246092;
-  text-align: center;
-  width: 82%;
-  padding: 25px;
-  border-radius: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.toggled-nav .fa-times {
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  cursor: pointer;
-}
-
-.toggled-nav hr {
-  display: block;
-  border: 0;
-  border-top: 1px solid #658096;
-  padding: 0;
-  margin: 25px 0;
-  height: 1px;
-}
-
-.toggled-nav .nav-menu {
-  line-height: 3;
-}
-
-.toggled-nav .nav-menu a {
-  display: block;
-  border-radius: 10px;
-}
-
-.toggled-nav .nav-menu a:hover {
-  background-color: #1f5480;
-}
-
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #fdfdfd;
-  background-color: #394548;
-  padding: 15px;
-  position: -webkit-sticky;
-  position: sticky;
-}
-
-.main-nav .fa-bars {
-  cursor: pointer;
 }
 
 .hero {
@@ -131,5 +76,95 @@ h2 {
 
 .hero p {
   font-size: 0.8rem;
+}
+
+header {
+  color: #fdfdfd;
+  background-color: #394548;
+  text-transform: uppercase;
+  padding: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.toggled-nav {
+  display: none;
+  background-color: #1c2e4a;
+  text-align: center;
+  width: 82%;
+  padding: 25px;
+  border-radius: 10px;
+  letter-spacing: 0.2em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.toggled-nav .fa-times {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.toggled-nav hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid;
+  padding: 0;
+  margin: 25px 0;
+  height: 1px;
+}
+
+.toggled-nav .nav-menu {
+  line-height: 3;
+}
+
+.toggled-nav .nav-menu a {
+  display: block;
+  border-radius: 10px;
+}
+
+.toggled-nav .nav-menu a:hover {
+  background-color: #192841;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-nav .fa-bars {
+  cursor: pointer;
+}
+
+.relax {
+  background-color: #1c2e4a;
+  text-align: right;
+}
+
+.relax img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.relax .feature-content h2 {
+  margin: 20px 0;
+}
+
+.relax .feature-content p {
+  margin: 20px 0;
+}
+
+.relax .feature-content a span {
+  margin-left: 5px;
 }
 /*# sourceMappingURL=main.css.map */

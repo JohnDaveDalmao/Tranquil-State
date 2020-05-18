@@ -1,12 +1,10 @@
 .toggled-nav {
   display: none;
-  color: color(primary);
   background-color: color(light-blue);
   text-align: center;
   width: 82%;
   padding: 25px;
   border-radius: 10px;
-  text-transform: uppercase;
   letter-spacing: 0.2em;
 
   position: absolute;
@@ -47,10 +45,7 @@
 .main-nav {
   display: flex;
   justify-content: space-between;
-  color: color(primary);
-  background-color: #394548; //rgba(54, 58, 77, 0.9)
-  padding: 15px;
-  position: sticky;
+  // position: sticky;
   // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 
   .fa-bars {

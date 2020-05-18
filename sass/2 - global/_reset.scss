@@ -7,6 +7,11 @@
 body {
   position: relative;
   height: 100vh; //temp ra if maguba
+  color: color(primary);
+}
+
+section {
+  padding: $content-padding;
 }
 
 ul {
@@ -20,6 +25,10 @@ a {
 
 p {
   line-height: 1.8;
+}
+
+img {
+  width: 100%;
 }
 // hr {
 //   border: 0;
