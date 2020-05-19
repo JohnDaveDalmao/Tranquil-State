@@ -23,6 +23,11 @@ a {
   color: color(primary);
 }
 
+// in LEARN MORE action
+a span {
+  margin-left: 5px;
+}
+
 p {
   line-height: 1.8;
 }
@@ -30,9 +35,18 @@ p {
 img {
   width: 100%;
 }
-// hr {
-//   border: 0;
-//   border-top: 1px solid red;
-//   padding: 0;
-//   width: 80%;
-// }
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid color(muted);
+  padding: 0;
+  height: 1px;
+}

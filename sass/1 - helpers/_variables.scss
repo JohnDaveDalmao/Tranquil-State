@@ -8,18 +8,21 @@ $extra-large: 1200px;
 $colors: (
   primary: #fdfdfd,
   muted: #545b67,
-  light-muted: #658096,
+  light-muted: #6e7a85,
+  main-gray: #1d2528,
+  sub-gray: #2b353d,
   dark-blue: #152238,
   mid-blue: #192841,
   light-blue: #1c2e4a,
-  // dark-blue: #1c4c74,
-    // mid-blue: #1f5480,
-    // light-blue: #246092,,
 );
 
 // Images
 $img-measurement: 200px;
 
+// Padding
 $content-padding: 2em;
 $chevron-padding: 0.5em;
+$section-botton-padding: 110px;
+
+// Margin
 $y-element-margin: 20px 0;

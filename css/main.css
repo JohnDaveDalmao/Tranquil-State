@@ -29,6 +29,10 @@ a {
   color: #fdfdfd;
 }
 
+a span {
+  margin-left: 5px;
+}
+
 p {
   line-height: 1.8;
 }
@@ -37,14 +41,39 @@ img {
   width: 100%;
 }
 
+h1,
+h2,
+h3 {
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid #545b67;
+  padding: 0;
+  height: 1px;
+}
+
 /* Fonts */
 * {
   font-family: "Muli", sans-serif;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Rambla", sans-serif;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  border: 1px solid #545b67;
+  padding: 12px 0;
+  border-radius: 8px;
+  letter-spacing: 0.1em;
 }
 
 header {
@@ -52,6 +81,7 @@ header {
   background-color: #394548;
   text-transform: uppercase;
   padding: 15px;
+  z-index: 100;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -80,12 +110,7 @@ header {
 }
 
 .toggled-nav hr {
-  display: block;
-  border: 0;
-  border-top: 1px solid;
-  padding: 0;
   margin: 25px 0;
-  height: 1px;
 }
 
 .toggled-nav .nav-menu {
@@ -114,6 +139,14 @@ header {
   cursor: pointer;
 }
 
+.card-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ()[1fr];
+      grid-template-columns: repeat(1fr);
+  gap: 2em;
+}
+
 /*==============
   Hero Section
 ==============*/
@@ -137,11 +170,11 @@ header {
 
 .hero h1 {
   font-size: 1.8rem;
-  letter-spacing: 0.1rem;
 }
 
 .hero hr {
   margin: 20px 0;
+  border-top: 1px solid #6e7a85;
 }
 
 .hero p {
@@ -163,10 +196,6 @@ header {
 
 .features .feature-content p {
   margin: 20px 0;
-}
-
-.features .feature-content a span {
-  margin-left: 5px;
 }
 
 .relax {
@@ -194,6 +223,7 @@ header {
   background-color: #192841;
   position: relative;
   z-index: 1;
+  padding-bottom: 110px;
 }
 
 .photography::before {
@@ -207,5 +237,84 @@ header {
   left: 0;
   -webkit-transform: skewY(8deg);
           transform: skewY(8deg);
+}
+
+.food-and-drinks {
+  background-color: #152238;
+  position: relative;
+  z-index: 1;
+  text-align: right;
+  padding-bottom: 110px;
+}
+
+.food-and-drinks::before {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  content: "";
+  background: inherit;
+  z-index: -1;
+  top: -40px;
+  left: 0;
+  -webkit-transform: skewY(-8deg);
+          transform: skewY(-8deg);
+}
+
+/*===================
+  Activities Section
+===================*/
+.activities {
+  background-color: #1d2528;
+  position: relative;
+  z-index: 1;
+}
+
+.activities .activities-inner hr {
+  margin: 20px 0;
+}
+
+.activities::before {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  content: "";
+  background: inherit;
+  z-index: -1;
+  top: -40px;
+  left: 0;
+  -webkit-transform: skewY(8deg);
+          transform: skewY(8deg);
+}
+
+.activities::after {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  content: "";
+  background: inherit;
+  z-index: -1;
+  bottom: -40px;
+  left: 0;
+  -webkit-transform: skewY(-8deg);
+          transform: skewY(-8deg);
+}
+
+.card-section {
+  margin: 2em 0;
+}
+
+.card-section .card {
+  background-color: #2b353d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-section .card .card-content {
+  padding: 25px;
+}
+
+.card-section .card .card-content a {
+  padding: 30px 0 5px 0;
+  display: inline-block;
 }
 /*# sourceMappingURL=main.css.map */
