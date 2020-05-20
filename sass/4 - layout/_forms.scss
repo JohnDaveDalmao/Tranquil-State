@@ -1,0 +1,45 @@
+form {
+  margin: 30px 0;
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    color: color(primary);
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 0 10px;
+    letter-spacing: 0.2em;
+    border: 1px solid color(light-muted);
+  }
+
+  input:focus,
+  textarea:focus {
+    border: 1px solid color(focus-blue);
+    border-radius: 8px;
+    outline: none;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  #email-label {
+    margin-top: 20px;
+  }
+
+  #email {
+    margin-bottom: 20px;
+  }
+
+  input {
+    height: 40px;
+  }
+
+  textarea {
+    margin-bottom: 20px;
+  }
+}

@@ -4,9 +4,9 @@
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../../images/banner.jpeg) center / cover no-repeat;
-  padding: $content-padding;
+  padding: 4em 2em;
   color: color(primary);
-  height: 60vh;
+  height: 69vh;
 
   .fa-map-signs {
     font-size: 3.2em;
@@ -148,7 +148,7 @@
   content: "";
   background: inherit;
   z-index: -1;
-  bottom: -40px;
+  bottom: -30px;
   left: 0;
   transform: skewY(-8deg);
 }
@@ -168,6 +168,23 @@
         padding: 30px 0 5px 0;
         display: inline-block;
       }
+    }
+  }
+}
+
+/*=================
+  Contact Section
+=================*/
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/banner.jpeg) center / cover no-repeat;
+
+  .contact-inner {
+    padding-top: 5em;
+
+    hr {
+      margin: $y-element-margin;
+      border-top: 1px solid color(light-muted);
     }
   }
 }

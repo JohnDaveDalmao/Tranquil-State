@@ -1,9 +1,10 @@
 header {
   color: color(primary);
-  background-color: #394548; //rgba(54, 58, 77, 0.9)
+  background-color: #394548f8; //rgba(58, 73, 76, 0.568);
   text-transform: uppercase;
   padding: 15px;
   z-index: 100;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
 }

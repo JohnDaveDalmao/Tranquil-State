@@ -78,18 +78,18 @@ h3 {
 
 header {
   color: #fdfdfd;
-  background-color: #394548;
+  background-color: #394548f8;
   text-transform: uppercase;
   padding: 15px;
   z-index: 100;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
 }
 
 .toggled-nav {
   display: none;
-  background-color: #1c2e4a;
+  background-color: #73777c;
   text-align: center;
   width: 82%;
   padding: 25px;
@@ -147,15 +147,61 @@ header {
   gap: 2em;
 }
 
+form {
+  margin: 30px 0;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  color: #fdfdfd;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 0 10px;
+  letter-spacing: 0.2em;
+  border: 1px solid #6e7a85;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #2d76c9;
+  border-radius: 8px;
+  outline: none;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+form #email-label {
+  margin-top: 20px;
+}
+
+form #email {
+  margin-bottom: 20px;
+}
+
+form input {
+  height: 40px;
+}
+
+form textarea {
+  margin-bottom: 20px;
+}
+
 /*==============
   Hero Section
 ==============*/
 .hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/banner.jpeg) center/cover no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/banner.jpeg) center/cover no-repeat;
-  padding: 2em;
+  padding: 4em 2em;
   color: #fdfdfd;
-  height: 60vh;
+  height: 69vh;
 }
 
 .hero .fa-map-signs {
@@ -199,7 +245,7 @@ header {
 }
 
 .relax {
-  background-color: #1c2e4a;
+  background-color: #73777c;
   text-align: right;
   position: relative;
   z-index: 1;
@@ -293,7 +339,7 @@ header {
   content: "";
   background: inherit;
   z-index: -1;
-  bottom: -40px;
+  bottom: -30px;
   left: 0;
   -webkit-transform: skewY(-8deg);
           transform: skewY(-8deg);
@@ -316,5 +362,22 @@ header {
 .card-section .card .card-content a {
   padding: 30px 0 5px 0;
   display: inline-block;
+}
+
+/*=================
+  Contact Section
+=================*/
+.contact {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/banner.jpeg) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/banner.jpeg) center/cover no-repeat;
+}
+
+.contact .contact-inner {
+  padding-top: 5em;
+}
+
+.contact .contact-inner hr {
+  margin: 20px 0;
+  border-top: 1px solid #6e7a85;
 }
 /*# sourceMappingURL=main.css.map */
