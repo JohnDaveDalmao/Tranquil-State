@@ -11,9 +11,9 @@ $colors: (
   light-muted: #6e7a85,
   main-gray: #1d2528,
   sub-gray: #2b353d,
-  dark-blue: #152238,
+  light-blue: #1c2e4a,
   mid-blue: #192841,
-  light-blue: #73777c,
+  dark-blue: #152238,
   focus-blue: #2d76c9,
 );
 
@@ -27,3 +27,7 @@ $section-botton-padding: 110px;
 
 // Margin
 $y-element-margin: 20px 0;
+
+
+// Percents
+$razor-blade-top: -40px;
