@@ -1,0 +1,22 @@
+.learn-more {
+  min-height: 25px;
+  display: inline-block;
+}
+
+.learn-more span {
+  vertical-align: middle;
+}
+
+// Hover off
+.learn-more .fa-chevron-circle-right {
+  margin-right: 8px;
+  transition: margin 0.3s;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+// Hover on
+.learn-more:hover .fa-chevron-circle-right {
+  transition: all 0.3s ease-in-out;
+  margin-right: 18px;
+}

@@ -76,6 +76,29 @@ h3 {
   letter-spacing: 0.1em;
 }
 
+.learn-more {
+  min-height: 25px;
+  display: inline-block;
+}
+
+.learn-more span {
+  vertical-align: middle;
+}
+
+.learn-more .fa-chevron-circle-right {
+  margin-right: 8px;
+  -webkit-transition: margin 0.3s;
+  transition: margin 0.3s;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+.learn-more:hover .fa-chevron-circle-right {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 18px;
+}
+
 header {
   color: #fdfdfd;
   background-color: #394548f8;
