@@ -2,8 +2,7 @@
   Hero Section
 ==============*/
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../../images/banner.jpeg) center / cover no-repeat;
+  background: $main-bg;
   padding: 4em 2em;
   color: color(primary);
   height: 69vh;
@@ -176,8 +175,7 @@
   Contact Section
 =================*/
 .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../../images/banner.jpeg) center / cover no-repeat;
+  background: $main-bg;
 
   &__inner {
     padding-top: 5em;
@@ -219,14 +217,3 @@
     display: inline-block;
   }
 }
-
-// .features a i {
-//   padding-right: -8px;
-//   transition: padding 0.3s;
-// }
-
-// /* Hover on */
-// .features a:hover i {
-//   transition: all 0.3s ease-in-out;
-//   padding-right: 8px;
-// }

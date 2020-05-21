@@ -1,38 +1,50 @@
 .toggled-nav {
-  display: none;
-  background-color: color(light-blue);
+  visibility: visible;
+  position: fixed;
+  background: rgba(25, 28, 31, 0.3);
+  height: 100%;
+  left: 0;
+  opacity: 1;
   text-align: center;
-  width: 82%;
-  padding: 25px;
-  border-radius: 10px;
-  letter-spacing: 0.2em;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  .fa-times {
+  &__inner {
+    background-color: color(light-blue);
+    text-align: center;
+    width: 82%;
+    padding: 25px;
+    border-radius: 10px;
+    letter-spacing: 0.2em;
+    z-index: 100;
     position: absolute;
-    right: 20px;
-    top: 15px;
-    cursor: pointer;
-  }
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
-  hr {
-    margin: 25px 0;
-  }
-
-  .nav-menu {
-    line-height: 3;
-
-    a {
-      display: block;
-      border-radius: 10px;
+    .fa-times {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      cursor: pointer;
     }
 
-    a:hover {
-      background-color: color(mid-blue);
+    hr {
+      margin: 25px 0;
+    }
+
+    .nav-menu {
+      line-height: 3;
+
+      a {
+        display: block;
+        border-radius: 10px;
+      }
+
+      a:hover {
+        background-color: color(mid-blue);
+      }
     }
   }
 }
@@ -40,7 +52,6 @@
 .main-nav {
   display: flex;
   justify-content: space-between;
-  // position: sticky;
   // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 
   .fa-bars {

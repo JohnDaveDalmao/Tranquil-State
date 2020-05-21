@@ -19,6 +19,8 @@ $colors: (
 
 // Images
 $img-measurement: 200px;
+$main-bg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../../images/banner.jpeg) center / cover no-repeat fixed;
 
 // Padding
 $content-padding: 2em;
@@ -27,7 +29,6 @@ $section-botton-padding: 110px;
 
 // Margin
 $y-element-margin: 20px 0;
-
 
 // Percents
 $razor-blade-top: -40px;

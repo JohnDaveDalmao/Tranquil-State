@@ -12,8 +12,8 @@
 
 body {
   position: relative;
-  height: 100vh;
   color: #fdfdfd;
+  max-width: 1200px;
 }
 
 section {
@@ -74,6 +74,11 @@ h3 {
   padding: 12px 0;
   border-radius: 8px;
   letter-spacing: 0.1em;
+  background: rgba(71, 91, 99, 0);
+}
+
+.button:hover {
+  background: rgba(71, 91, 99, 0.4);
 }
 
 .learn-more {
@@ -86,17 +91,17 @@ h3 {
 }
 
 .learn-more .fa-chevron-circle-right {
-  margin-right: 8px;
-  -webkit-transition: margin 0.3s;
-  transition: margin 0.3s;
+  color: #fdfdfd;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
   font-size: 1.5em;
   vertical-align: middle;
 }
 
 .learn-more:hover .fa-chevron-circle-right {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  margin-right: 18px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: #a4a4a4;
 }
 
 header {
@@ -111,13 +116,26 @@ header {
 }
 
 .toggled-nav {
-  display: none;
+  visibility: visible;
+  position: fixed;
+  background: rgba(25, 28, 31, 0.3);
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.toggled-nav__inner {
   background-color: #1c2e4a;
   text-align: center;
   width: 82%;
   padding: 25px;
   border-radius: 10px;
   letter-spacing: 0.2em;
+  z-index: 100;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -125,27 +143,27 @@ header {
           transform: translate(-50%, -50%);
 }
 
-.toggled-nav .fa-times {
+.toggled-nav__inner .fa-times {
   position: absolute;
   right: 20px;
   top: 15px;
   cursor: pointer;
 }
 
-.toggled-nav hr {
+.toggled-nav__inner hr {
   margin: 25px 0;
 }
 
-.toggled-nav .nav-menu {
+.toggled-nav__inner .nav-menu {
   line-height: 3;
 }
 
-.toggled-nav .nav-menu a {
+.toggled-nav__inner .nav-menu a {
   display: block;
   border-radius: 10px;
 }
 
-.toggled-nav .nav-menu a:hover {
+.toggled-nav__inner .nav-menu a:hover {
   background-color: #192841;
 }
 
@@ -223,14 +241,20 @@ footer {
   background-color: #121211;
   padding: 2em;
   font-size: 0.9em;
+  color: #545b67;
+}
+
+footer p {
+  border-top: 1px solid #545b67;
+  padding-top: 3em;
 }
 
 /*==============
   Hero Section
 ==============*/
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/banner.jpeg) center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/banner.jpeg) center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/banner.jpeg) center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/banner.jpeg) center/cover no-repeat fixed;
   padding: 4em 2em;
   color: #fdfdfd;
   height: 69vh;
@@ -400,8 +424,8 @@ footer {
   Contact Section
 =================*/
 .contact {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/banner.jpeg) center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/banner.jpeg) center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/banner.jpeg) center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/banner.jpeg) center/cover no-repeat fixed;
 }
 
 .contact__inner {

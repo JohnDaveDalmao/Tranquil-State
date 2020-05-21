@@ -7,6 +7,8 @@
     <script src="./js/all.js"></script>
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- Nav in JS -->
+    <script src="./js/nav.js"></script>
     <title>The Tranquil State</title>
   </head>
 
@@ -14,15 +16,17 @@
     <!-- Navigation -->
     <!-- Hidden Nav -->
     <nav class="toggled-nav">
-      <i class="fas fa-times"></i>
-      <h2>Menu</h2>
-      <hr />
-      <div class="nav-menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-        </ul>
+      <div class="toggled-nav__inner">
+        <i class="fas fa-times"></i>
+        <h2>Menu</h2>
+        <hr />
+        <div class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -30,7 +34,7 @@
       <!-- Visible Nav -->
       <nav class="main-nav">
         <h5>THE TRANQUIL STATE</h5>
-        <i class="fas fa-bars"></i>
+        <i id="menu-icon" class="fas fa-bars" onclick="hey()"></i>
       </nav>
     </header>
 
