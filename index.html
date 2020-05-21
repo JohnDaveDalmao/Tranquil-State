@@ -15,9 +15,9 @@
   <body>
     <!-- Navigation -->
     <!-- Hidden Nav -->
-    <nav class="toggled-nav">
+    <nav id="toggled-nav" class="toggled-nav">
       <div class="toggled-nav__inner">
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times" onclick="HideNav()"></i>
         <h2>Menu</h2>
         <hr />
         <div class="nav-menu">
@@ -30,11 +30,11 @@
       </div>
     </nav>
 
-    <header>
+    <header id="header">
       <!-- Visible Nav -->
       <nav class="main-nav">
         <h5>THE TRANQUIL STATE</h5>
-        <i id="menu-icon" class="fas fa-bars" onclick="hey()"></i>
+        <i id="menu-icon" class="fas fa-bars" onclick="ShowNav()"></i>
       </nav>
     </header>
 
