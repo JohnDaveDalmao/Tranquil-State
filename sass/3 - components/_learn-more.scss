@@ -5,6 +5,7 @@
 
 .learn-more span {
   vertical-align: middle;
+  margin-left: 15px;
 }
 
 // Hover off
@@ -20,17 +21,3 @@
   transition: all 0.2s ease-in;
   color: darken($color: color(primary), $amount: 35%);
 }
-
-// // Hover off
-// .learn-more .fa-chevron-circle-right {
-//   margin-right: 8px;
-//   transition: margin 0.3s;
-//   font-size: 1.5em;
-//   vertical-align: middle;
-// }
-
-// // Hover on
-// .learn-more:hover .fa-chevron-circle-right {
-//   transition: all 0.3s ease-in-out;
-//   margin-right: 18px;
-// }
